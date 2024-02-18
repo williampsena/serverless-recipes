@@ -20,8 +20,8 @@
 		"pa": "^0.1.1"
 	},
 	"scripts": {
-		"test": "jest --env=node --colors --coverage test",
-		"ci:run": "npm run test && npm run lint && npm run check",
+		"test": "jest --silent --env=node --colors --coverage test",
+		"ci": "npm run test && npm run lint && npm run check",
 		"format": "prettier --write \"**/*.ts\" \"**/*.js\"",
 		"lint": "eslint . --ext .ts",
 		"check": "tsc --noEmit"
