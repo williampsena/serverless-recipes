@@ -1,0 +1,29 @@
+{
+	"devDependencies": {
+		"@types/aws-lambda": "^8.10.133",
+		"@types/jest": "^29.5.12",
+		"@types/fetch-mock": "^7.3.8",
+		"@types/node": "^20.11.19",
+		"@types/node-fetch": "^2.6.11",
+		"@types/serverless": "^3.12.22",
+		"@typescript-eslint/eslint-plugin": "^7.0.1",
+		"eslint": "^8.56.0",
+		"jest": "^29.7.0",
+		"prettier": "^3.2.5",
+		"serverless-offline": "^13.3.3",
+		"serverless-plugin-typescript": "^2.1.5",
+		"ts-jest": "^29.1.2"
+	},
+	"dependencies": {
+		"typescript": "^5.3.3",
+		"fetch-mock": "^9.11.0",
+		"pa": "^0.1.1"
+	},
+	"scripts": {
+		"test": "jest --env=node --colors --coverage test",
+		"ci": "npm run test && npm run lint && npm run check",
+		"format": "prettier --write \"**/*.ts\" \"**/*.js\"",
+		"lint": "eslint . --ext .ts",
+		"check": "tsc --noEmit"
+	}
+}
