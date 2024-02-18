@@ -1,5 +1,8 @@
 # About
 
+![workflow](https://github.com/williampsena/serverless-recipes/actions/workflows/main.yml/badge.svg)
+
+
 This repository contains serverless examples.
 
 [hello world example](./hello-world/README.md)
