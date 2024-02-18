@@ -1,6 +1,6 @@
 # About
 
-![workflow](https://github.com/williampsena/serverless-recipes/actions/workflows/main.yml/badge.svg)
+![workflow](https://github.com/williampsena/serverless-recipes/actions/workflows/hello-world.yml/badge.svg)
 
 This repository contains an example of building and running Serverless locally with test coverage.
 
