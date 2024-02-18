@@ -12,12 +12,12 @@
 		"prettier": "^3.2.5",
 		"serverless-offline": "^13.3.3",
 		"serverless-plugin-typescript": "^2.1.5",
-		"ts-jest": "^29.1.2"
+		"ts-jest": "^29.1.2",
+		"pa": "^0.1.1",
+		"fetch-mock": "^9.11.0"
 	},
 	"dependencies": {
-		"typescript": "^5.3.3",
-		"fetch-mock": "^9.11.0",
-		"pa": "^0.1.1"
+		"typescript": "^5.3.3"
 	},
 	"scripts": {
 		"test": "jest --silent --env=node --colors --coverage test",
