@@ -4,6 +4,10 @@ This repository contains serverless examples.
 
 - [The hello world 🌎 example](./hello-world/README.md)
 
+Articles related:
+
+- [Building and deploying AWS Lambda with Serverless framework in just a few of minutes](https://willsena.dev/building-and-deploying-aws-lambda-with-serverless-framework-in-just-a-few-of-minutes/)
+
 # Requirements
 
 Install Serverless CLI.
