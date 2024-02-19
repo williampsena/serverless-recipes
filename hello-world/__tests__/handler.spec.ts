@@ -10,7 +10,7 @@ describe('given listen currencies http request', function () {
   beforeEach(() => fetchMock.restore())
 
   it('should raise error when Currency param is empty', async function () {
-    fetchMock.mock('*', { status: 404, body: '' })
+    fetchMock.mock(/\/last\//, { status: 404, body: '' })
 
     const event = { queryStringParameters: {} } as APIGatewayProxyEvent
 
@@ -23,7 +23,7 @@ describe('given listen currencies http request', function () {
   })
 
   it('should return currency list', async function () {
-    fetchMock.mock('*', {
+    fetchMock.mock(/\/last\//, {
       status: 200,
       body: getFixture('list_currencies_ok.json'),
     })
