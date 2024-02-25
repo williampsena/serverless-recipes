@@ -31,3 +31,15 @@ npm test
 ```shell
 npm ci
 ```
+
+# Deploy
+
+```shell
+SLS_DEBUG=* sls deploy
+```
+
+# Remove deploy
+
+```shell
+SLS_DEBUG=* sls remove
+```
