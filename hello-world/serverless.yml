@@ -4,6 +4,9 @@ frameworkVersion: "3"
 provider:
   name: aws
   runtime: nodejs18.x
+  # You need to create an IAM role for your Lambda.
+  iam:
+    role: arn:aws:iam::12345678:role/AWSLambda
 
 functions:
   api:
@@ -15,3 +18,8 @@ functions:
 plugins:
   - serverless-plugin-typescript
   - serverless-offline
+
+package:
+  patterns:
+    - '!node_modules/**'
+    - 'node_modules/node-fetch/**'
